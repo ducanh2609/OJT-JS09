@@ -21,7 +21,7 @@ module.exports.getAllStudents = async (req, res) => {
                 }
             }
         }
-        if (!name && !page && !perPage) res.send(record)
+        if (!name && !page) res.send(record)
         else res.send(result)
     } catch (error) {
         console.log(error);
